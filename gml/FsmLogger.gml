@@ -1,6 +1,9 @@
 function __fsm_logger_runtime() {
     if (global[$ "__fsm_logger"] == undefined) {
-        global.__fsm_logger = { registered_hooks: undefined }
+        global.__fsm_logger = { 
+            registered_hooks: undefined,
+            player_fsm: undefined
+        }
     }
 
     return global.__fsm_logger;
@@ -24,6 +27,8 @@ function fsm_logger_transition(_value, _ctx) {
     if (!instance_exists(_owner)) return undefined;
 
     if (_owner.object_index != obj_ari) return undefined;
+
+    global.__fsm_logger.player_fsm = _value.fsm;
 
     var _message =
         "Ari FSM: "
