@@ -1,6 +1,7 @@
 {
     "name": "FSM Logger",
     "version": "1.0",
+    "author": "starbles",
     "description": "Logs player FSM state transitions for mod development",
     "minInstallerVersion": "0.14.0",
     "manifestVersion": 1,
