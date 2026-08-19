@@ -1,0 +1,8 @@
+{
+    "name": "FSM Logger",
+    "version": "1.0",
+    "description": "Logs player FSM state transitions for mod development",
+    "minInstallerVersion": "0.14.0",
+    "manifestVersion": 1,
+    "requires_hooks": ["fsm.transition"]
+}
