@@ -13,7 +13,7 @@ function fsm_logger_register_callbacks() {
 
     _rt.registered_hooks = true;
 
-    mmapi_filter("fsm.transtion", fsm_logger_transition);
+    mmapi_filter("fsm.transition", fsm_logger_transition);
 }
 
 function fsm_logger_transition(_value, _ctx) {
